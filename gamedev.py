@@ -1,6 +1,4 @@
-
-
-
+"""
 #import pygame
 import pygame
 
@@ -47,14 +45,9 @@ while(dead==False):
     pygame.display.flip()
     clock.tick(clock_tick_rate)
 
+"""
 
-
-
-
-
-
-
-"""import pygame
+import pygame
 
 pygame.init()
 
@@ -101,4 +94,4 @@ while not crashed:
     clock.tick(60)
 
 pygame.quit()
-quit()"""
+quit()
