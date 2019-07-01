@@ -47,9 +47,9 @@ while(dead==False):
 
 """
 
-import pygame
+from Players.AIPlayer import AIPlayer
 
-pygame.init()
+"""pygame.init()
 
 display_width = 800
 display_height = 600
@@ -63,7 +63,20 @@ clock = pygame.time.Clock()
 
 carImg = pygame.image.load('carimage.png')
 gameDisplay.fill(white)
+"""
+player = AIPlayer([], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_discard()
+player.do_grouping()
+print(player.final_group)
 
+"""
 def car(x,y):
     gameDisplay.blit(carImg, (x, y))
 
@@ -95,3 +108,4 @@ while not crashed:
 
 pygame.quit()
 quit()
+"""
