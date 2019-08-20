@@ -4,6 +4,8 @@ from collections import Counter
 def OptimalDiscard(player):
     """Discard a card from my player.hand according to a strategy
     based on the cards I have discarded"""
+
+    def
     round = 11 - len(player.hand)
     translate = {'1': 1, '2': 2, '3': 3, '4': 4,
                  '5': 5, '6': 6, '7': 7, '8': 8,

@@ -12,7 +12,15 @@ class Player:
         return len(self.hand)
 
     def discard(self, card):
-        return self.hand.remove(card)
+        round = 11 - len(self.hand)
+        if self.num == 0:
+            self.discard_history[round - 1] = [card]
+        else:
+            self.discard_history[round - 1].append(card)
+        self.hand.remove(card)
 
     def do_discard(self):
         raise NotImplementedError('Need to extend')
+
+    def last_player_history(self):
+        k
