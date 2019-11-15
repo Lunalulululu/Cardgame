@@ -64,17 +64,17 @@ clock = pygame.time.Clock()
 carImg = pygame.image.load('carimage.png')
 gameDisplay.fill(white)
 """
-player = AIPlayer([], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+player0 = AIPlayer([[]], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+player1 = AIPlayer([[]], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+player2 = AIPlayer([[]], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+player3 = AIPlayer([[]], 0, ['AH', '3S', '4S', '6H', '6S', '7S', '8D', '9C', '9S', 'JH'])
+
 player.do_discard()
-player.do_discard()
-player.do_discard()
-player.do_discard()
-player.do_discard()
-player.do_discard()
-player.do_discard()
-player.do_discard()
+print(player.hand)
+
 player.do_grouping()
 print(player.final_group)
+
 
 """
 def car(x,y):
